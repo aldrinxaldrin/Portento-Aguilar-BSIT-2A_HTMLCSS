@@ -1,0 +1,293 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(216, 191, 191, 0.096);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header {
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(20px);
+    height: fit-content;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 10px 40px 0px rgba(255, 0, 0, 0.123);
+    z-index: 1000;
+    
+}
+.header .logo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: auto;
+
+}
+.header .logo img {
+    width: 60px;
+    margin-right: 20px;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+.logo h2 a{
+    text-align: center;
+    text-decoration: none;
+    color: #900000;
+}
+ 
+.logo h2 a:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    background: linear-gradient(90deg, rgba(223, 179, 179, 0.5) 16%, rgba(238, 237, 154, 0.5) 100%);
+    border: 2px solid #9000005e;
+    border-radius: 8px;
+}
+.navbar {
+    display: flex;
+    width: 50%;
+}
+.navbar .nav{
+    display: flex;
+    gap: 40px;
+    margin-right: 120px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar .nav a {
+    text-decoration: none;
+    color: #3a0000;
+}
+.navbar li {
+    list-style: none;
+}
+.navbar .nav a:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    background: linear-gradient(90deg,#f9fd0e,#df150e,#f7a308);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header .navbar .nav .active{
+    color: #900000;
+    font-weight: bold;
+    width: 100%;
+}
+.content {
+    position: relative;
+    top: 2rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    color: #3a0000;
+    gap: 2rem;
+}
+.content .welcome {
+    width: 80%;
+}
+.content .welcome h1 {
+    margin: 3rem 0 4rem 0;
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 4rem;
+}
+.content .welcome .highlight {
+    color: #900000;
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.content .welcome p {
+    font-size: 1.3rem;
+    margin: 1rem 0 0 0;
+    text-align: justify;
+    text-indent: 5rem;
+}
+.content .banner {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    text-align: center;
+}
+.content .banner img {
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+}
+.content .main {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    gap: 2rem;
+}
+.content .main .left-sidebar h3 {
+    color:#900000;
+    margin-top: 20px;
+    
+}
+.content .main .info h1 {
+    color:#900000;
+}
+.content .main .left-sidebar p, .content .main .info h2 {
+    color:#6e0000;
+}
+.content .main .left-sidebar {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px 0px  rgba(255, 0, 0, 0.123);
+    height: fit-content;
+    z-index: 999;
+    overflow: hidden;
+    background-color: #fff;
+    position: sticky;
+    top: 8.5rem;
+    left: 1rem;
+}
+.left-sidebar ul a {
+    text-decoration: none;
+    display: block;
+    margin-block: 1rem;
+}
+.left-sidebar ul a:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    background: linear-gradient(90deg,#f9fd0e,#df150e,#f7a308);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content .main .info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    width: 100%;
+    text-align: justify;
+}
+.content .main .info .highlight {
+    color: #3a0000;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+.content .main .info .core ul{
+    margin-left: 20px;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 10rem;
+}
+.footer .hr{
+    background-color: #900000;
+    font-weight: 10px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    margin-top: 2rem;
+}
+.content .container img{
+    margin-left: 50px;
+    width: auto;
+    border-radius: 15px;
+}
+.content .container .enroll {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+.content .container .enroll h2{
+    padding-bottom: 20px;
+    border-bottom: 2px dotted black;
+}
+.input {
+    margin-bottom: 20px;
+}
+.input input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: hsl(222, 100%, 95%);
+    color: #900000;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 1;
+    font-weight: bold;
+}
+
+button span {
+    z-index: 1;
+    position: relative;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    transform: translate3d(-50%,-50%,0) scale3d(0,0,0);
+    transition: opacity .4s cubic-bezier(.19,1,.22,1),transform .75s cubic-bezier(.19,1,.22,1);
+    background-color: #90000096;
+    opacity: 0;
+}
+
+button:hover span {
+    color: #000000;
+}
+
+button:hover::before {
+    opacity: 1;
+    transition-duration: .85s;
+    transform: translate3d(-50%,-50%,0) scale3d(1.2,1.2,1.2);
+}
+.content .error img{
+    margin-top: 15rem;
+}
